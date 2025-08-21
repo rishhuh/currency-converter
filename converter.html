@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/style.css" rel="stylesheet">
+    
+    <title>Currency Converter</title>
+</head>
+<body class = "h-screen flex items-center justify-center bg-gray-100 ">
+<div class = " bg-white px-6 shadow-md rounded-lg w-64 space-y-4">
+<h2 class = "text-center  font-bold text-2xl">Currency Converter</h2>
+
+<input type="number"
+placeholder="Enter amount"
+id = "amount"
+class = "border rounded w-full px-3 py-2 "
+/>
+<div class = "flex gap-2">
+    <select class = "border w-1/2 px-2 text-black py-2 rounded" id="fromcurrency"></select>
+    <select class = "border w-1/2 px-2 text-black py-2 rounded" id="tocurrency"></select>
+</div>
+<button id = "convertbtn" class = "bg-blue-600 w-full text-white rounded py-2 hover:bg-blue-700">Convert</button>
+
+<p id="result" class = "text-center text-lg font-semibold"></p>
+</div>
+
+    
+</body>
+<script src="./converter.js"></script>
+</html>
